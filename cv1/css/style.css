@@ -1,0 +1,96 @@
+body {
+font-family : Comic Sans, Comic Sans MS, cursive;
+font-size : 18px;
+color : #000;
+background-color : #fff;
+background-image : url('../img/1.jpg');
+}
+.container {
+padding : 15px 15px 15px 15px;
+margin-right : auto;
+margin-left : auto;
+}
+.container1 {
+padding : 15px 15px 15px 15px;
+margin-right : auto;
+margin-left : auto;
+height: 500px;
+}
+a {
+color : #000;
+text-decoration : none;
+}
+a.focus {
+color : rgb(24, 102, 140);
+text-decoration : none;
+}
+img {
+vertical-align : middle;
+float : left;
+padding-right : 20px;
+}
+h1 {
+padding : 20px 0 20px 0;
+text-align : center;
+font-size : 38px;
+}
+h2 {
+font-size : 30px;
+padding-left : 30px;
+}
+h3 {
+font-size : 24px;
+}
+h4 {
+font-size : 18px;
+}
+h5 {
+font-size : 14px;
+}
+h6 {
+font-size : 12px;
+}
+p {
+text-align : justify;
+}
+ul li, ol li {
+padding : 5px;
+}
+hr.style-one {
+border : 0px;
+padding : 0px;
+margin : 2px;
+height : 1px;
+background : #1A688E;
+background-image : linear-gradient(to right, #1A688E, #000, #5BACC7);
+}
+hr.style-two {
+border : 0px;
+padding : 0px;
+margin : 2px;
+height : 1px;
+background : #1A688E;
+background-image : linear-gradient(to right, #1A688E, #000, #5BACC7);
+}
+#nav_menu {
+padding : 0px;
+width : 100%;
+margin : 0px auto;
+font-size : 28px;
+text-align : center;
+}
+#nav_menu ul {
+list-style : none;
+padding : 0px;
+margin : 0px;
+}
+#nav_menu li {
+display : inline;
+margin : 10px;
+}
+a[href^="mailto:"]:before {
+content : "\2709";
+}
+.phone:before {
+content : "\2706";
+}
