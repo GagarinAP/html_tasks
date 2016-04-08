@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript" src="jquery-2.2.3.min.js"></script>
+</head>
+<body>
+	<form action="#">
+	  <p><i>Пожалуйста, заполните форму. Обязательные поля помечены </i><em>*</em></p>
+	  <fieldset>
+	    <legend>Контактная информация</legend>
+	      <label for="name">Имя <em>*</em></label>
+	      <input id="name" placeholder="Иван Иванов" autofocus required><br>      
+	      <label for="email">Email <em>*</em></label>
+	      <input id="email" placeholder="hello@gmail.com" required pattern="\S+@[a-z]+.[a-z]+"><br>
+	      <label for="password">Password<em>*</em></label>
+	      <input id="password" placeholder="+380(98)223-45-32"><br>
+	  </fieldset>
+	  <fieldset>
+	    <legend>Персональная информация</legend>
+	      <label for="age">Возраст<em>*</em></label>
+	      <input id="age" type="date" min="1920-01-01" max="2000-01-01"><br>	      
+	      <label for="gender">Пол</label>
+	      <select id="gender">
+	        <option value="female">Женщина</option>
+	        <option value="male">Мужчина</option>
+	      </select><br>
+	      <label for="comments">Комментарий</label>
+	      <textarea id="comments"></textarea>
+	  </fieldset>
+	  <p><input type="reset" value="Скинуть форму"></p>
+	  <p><input type="submit" value="Отправить информацию"></p>
+	  
+	</form>
+	<button onclick="getName()">Get name</button>
+	<script>
+		function getName() { 
+			alert( $('#name').val() );
+		}
+
+	</script>
+</body>
+</html>
